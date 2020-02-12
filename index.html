@@ -1,39 +1,41 @@
-
-<html>
+  <html>
     <head>
     <title>ANGIL - Welcome to my page </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Titillium+Web&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <head>
         <meta charset="UTF-8">
     <!----------------Header-------------------------->
-    <header>    
-    <nav>
-        <div class="main">
-            <div class="logo">
-                <img src="https://i.ibb.co/pPPSVLY/logo.png">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contactme">Contact Me</a></li>
-            </ul>
+    <header>
+        <nav>
+            <div class="main">
+                <div class="logo">
+                    <img src="images/logo.png">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </div>
         </div>
+        </nav>
+    </header>
+    <div class="slide">
+        <p>Want to work with me?</p>
+        <form action="" target="GET">
+        <input type="email" placeholder="Enter Your Email Address" class="email_main" required>
+        <button class="email_btm" type="button" onclick='document.getElementById("sent").innerHTML = "</br>Your message has been successfully sent. We will contact you very soon!"'>Get Started</button>
+          <h5 id="sent" class="sent-msg"></h5>
+      </form>
     </div>
-    </nav>
-    <div class="container1">
-        <div class="container">
-            
-        </div>
-    </div>
-        <div class="bottom">
-        <a href="#" class="btm">Hire Me</a>   
-        <a href="#" class="btm">Follow Me</a>  
-        </div>    
-        
-    </header> 
     <!----------------End Header---------------------->
     
     <!----------------About Me---------------------->
@@ -56,29 +58,67 @@
     <!----------------End About Me---------------------->
     
     <!----------------My Work---------------------->
-    <div class="work">
-        <h1 id="work">Latest Works</h1>
+    <div class="container-header" id="works">
+      <div class="container" id="cources">
+        <h1>My Recent Works</h1>
+        <h5>These are the works that i have done.</h5>
+       </div>
+       <div class="flex-box">
+       <div class="flex-container">
+          <div class="box-area">
+            <div class="img-area">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/ABC_%282013%29_Dark_Grey.svg/1200px-ABC_%282013%29_Dark_Grey.svg.png" style="width:50%">
+            <div class="text-area">
+          <span class="header-text">ABC Company</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <input type="submit" value="Read More" class="readmore">
+        </div> 
+          </div> 
+          </div>
+        </div>
+        <div class="flex-container">
+          <div class="box-area">
+            <div class="img-area">
+              <img src="/images/foodie.jpg" style="width:50%">
+            <div class="text-area">
+          <span class="header-text">The Foodie Restaurant</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <input type="submit" value="Read More" class="readmore">
+        </div> 
+          </div> 
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="box-area">
+          <div class="img-area">
+            <img src="https://www.seekpng.com/png/detail/231-2315426_stationery-vector-with-computer-vector-graphics.png" style="width:50%">
+          <div class="text-area">
+        <span class="header-text">Shop Nepal Pvt Ltd</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <input type="submit" value="Read More" class="readmore">
+      </div> 
+        </div> 
+        </div>
+      </div>
+      <input type="submit" value="view all" class="view-all">
     </div>
-    <div class="work_image">
-        <img src="images/foodie.jpg" height="200" width="200">
-        <img src="images/foodie.jpg" height="200" width="200"></br>
-        <img src="images/foodie.jpg" height="200" width="200">
-        <img src="images/foodie.jpg" height="200" width="200">
     </div>
+  </div>
+
     <!--------------END My Work-------------------->
     
     <!--------------Contact Me-------------------->
     <div class="contactme">
-        <h1 id="contactme">Contact Me</h1>
-        <p>If you are looking for a Professional Web Designer, contact me</p>
-            <div class="contactme-details">
-                <h2>+977-9801242398</h2>
-                <h2>theangil007@gmail.com</h2>
-                <h2>Butwal, Nepal</h2>
+        <h1 id="contactme">Get in touch with me</h1>
+        
+            <div class="contactme-form">
+                <form action="" method="get">
+                <input type="text" value="" class="input-form" placeholder="Your Name..." required></br>
+                <input type="text" value="" class="input-form" placeholder="Your Email.." required></br>
+                <textarea class="input-form" placeholder="Your Message" required></textarea></br>
+                <input type="submit" class="input-form-submit" value="Get in touch">
             </div>
-                <div class="hireme-bottom">
-                    <a href="#" class="hireme-btm">Hire Me</a>
-                </div>
     </div>
     <!--------------End Contact Me-------------------->
     <!--------------Footer-------------------->
